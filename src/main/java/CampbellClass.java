@@ -23,7 +23,14 @@ public final class CampbellClass {
         return meters * 100;
     }
     //removeNonAlpha
-    public static String removeNonAlpha(String str, boolean makeUpper) {
+    public static String removeNonAlpha(String str) {
+        String result = "";
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+                result = result + ch;
+            }
+    public static string removeNonAlpha(String str, boolean makeUpper) {
         String result = "";
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
