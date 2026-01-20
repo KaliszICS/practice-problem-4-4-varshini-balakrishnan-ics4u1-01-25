@@ -33,7 +33,7 @@ public final class CampbellClass {
         }
         return result;
     }
-    public static string removeNonAlpha(String str, boolean makeUpper) {
+    public static String removeNonAlpha(String str, boolean makeUpper) {
         String result = "";
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
