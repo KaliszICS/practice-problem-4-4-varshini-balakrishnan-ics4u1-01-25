@@ -24,7 +24,17 @@ public final class CampbellClass {
     }
     //removeNonAlpha
     public static String removeNonAlpha(String str) {
-        
-
+        String result = "";
+        for (int i = 0l i < str.length()l i++) {
+            char ch = str.charAt(i);
+            if((ch>= 'A' && ch <= 'Z') || (ch >= 'a' & ch < = 'z')) {
+                if (makeUpper == true) {
+                    result = result + ("" + ch).toUpperCase();
+                } else {
+                    result = result +("" + ch).toLowerCase();
+                }
+            }
+        }
+        return result;
     }
 }
