@@ -30,6 +30,9 @@ public final class CampbellClass {
             if((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
                 result = result + ch;
             }
+        }
+        return result;
+    }
     public static string removeNonAlpha(String str, boolean makeUpper) {
         String result = "";
         for (int i = 0; i < str.length(); i++) {
